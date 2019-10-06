@@ -1,0 +1,8 @@
+from array import*
+
+numoftimes=int(input())
+nums=[int(a) for a in input().split(' ')]
+mas=array('i',nums)
+if len(mas)==numoftimes:
+  mas.reverse()
+  print(*mas,sep=' ')
