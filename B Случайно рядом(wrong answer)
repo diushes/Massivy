@@ -1,16 +1,17 @@
+from array import*
 import random
 n=int(input())
 checker=False
 l=[]
 for i in range(n):
-  l.append(random.randint(1,5))
-print(*l)
-for i in range(len(l)-1):
+  l.append(random.randint(0,5))
+mas=array('i',l)
+print(*mas)
+for i in range(len(mas)-1):
 
-  if l[i]==l[i+1]:
-    print('YES',l.index(l[i]),(l.index(l[i]))+1)
+  if mas[i]==mas[i+1]:
+    print('YES',mas.index(mas[i]),(mas.index(mas[i]))+1)
     checker=True
     break
 if checker==False:
   print('NO')
-    
