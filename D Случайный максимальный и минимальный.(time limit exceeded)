@@ -1,0 +1,10 @@
+import random
+n=int(input())
+l=[]
+for i in range(n):
+  l.append(random.randint(-100,100))
+print(*l)
+sm=min(l)
+lr=max(l)
+print(sm,l.index(sm))
+print(lr,l.index(lr))
