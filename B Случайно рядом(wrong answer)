@@ -1,0 +1,16 @@
+import random
+n=int(input())
+checker=False
+l=[]
+for i in range(n):
+  l.append(random.randint(1,5))
+print(*l)
+for i in range(len(l)-1):
+
+  if l[i]==l[i+1]:
+    print('YES',l.index(l[i]),(l.index(l[i]))+1)
+    checker=True
+    break
+if checker==False:
+  print('NO')
+    
