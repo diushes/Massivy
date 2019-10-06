@@ -1,0 +1,22 @@
+import random
+n=int(input())
+checker=False
+l=[]
+for i in range(n):
+  l.append(random.randint(1,5))
+print(*l)
+for s in range(len(l)):
+  element=l[s]
+  index=l.index(l[s])
+  l[s]=''
+  if element in l:
+    index2=l.index(element)
+    checker=True
+    break
+
+if checker==True:
+  print('YES')
+  print(index)
+  print(index2)
+else:
+  print('NO')
