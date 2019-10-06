@@ -1,0 +1,6 @@
+numoftimes=int(input())
+nums=[int(a) for a in input().split(' ')]
+if len(nums)==numoftimes:
+  larg=max(nums)
+  maxes=nums.count(larg)
+  print(larg,maxes)
