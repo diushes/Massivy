@@ -1,0 +1,10 @@
+import random
+n,x=list(map(int,input().split(' ')))
+l=[]
+for i in range(n):
+  l.append(random.randint(1,5))
+print(*l)
+for element in l:
+  if element==x:
+    print(l.index(element))
+    l[l.index(element)]=''
