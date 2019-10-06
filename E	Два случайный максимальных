@@ -1,0 +1,15 @@
+import random
+n=int(input())
+if n<=1000000 and n>=1:
+  l=[]
+  for i in range(n):
+    l.append(random.randint(-100,100))
+  print(*l)
+
+  m=max(l)
+  print(m,l.index(max(l)))
+  l.remove(max(l))
+  if max(l)==m:
+    print(max(l),l.index(max(l)))
+  else:
+    print(-1)
